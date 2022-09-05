@@ -113,3 +113,5 @@ var fiveDay = function (latitude, longitude) {
     .then((response) => response.json())
     .then((data) => fiveDayForecast(data));
 };
+
+searchCity.addEventListener('click', cityInfo);
