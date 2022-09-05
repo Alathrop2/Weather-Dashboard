@@ -4,7 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+    <title>Weather Dashboard</title>
   </head>
-  <body></body>
+  <body>
+    <header class="is-size-1 is-justify-content-center is-flex has-background-success">Weather Dashboard</header>
+    <div   class="dropdown-is-active">
+      <h1 class="is-size-2">Search for A City:</h1>
+      <div class="dropdown-is-active">
+      <div class="dropdown-trigger">
+      <input id="cityName" class=" is-size-3 cityName" type="text" placeholder="Enter City Name " aria-haspopup="true" aria-controls="dropdown-menu" />
+      <button class="is-size-5 button is-success "
+      type="submit" >Submit</button>
+      <div id="history" class=" is-size-4"></div>
+      </div>
+      </div>
+    </div>
+    <div>
+      <div class ="currentCity " >
+        <h2 class="  is-size-3 is-flex is-justify-content-center has-background-primary has-text-black column box is-2 mx-auto currentC">Current City</h2>
+        <div class=" currentCityBox box has-background-grey-light is-mobile  is-4 mx-auto pb-6 mb-6 is-size-1  " id="currentCity"> </div>
+      </div>
+    </div>
+    <h3 class="is-size-1 is-justify-content-center is-flex has-background-danger my-auto weather">5-Day Forcast:</h3>
+    <section class="forecast columns is-mobile is-flex is-justify-content-space-evenly is-align-items-baseline my-auto ">
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
